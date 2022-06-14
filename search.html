@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>String search</h1>
+	<p>My name is Sania, I stay in Qatar</p>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		let text="My name is Sania, I stay in Qatar"
+		let position=text.search("Qatar");
+		document.getElementById('demo').innerHTML=position;
+	</script>
+<!--String templates -->
+<h1>String template</h1>
+
+<p id="temp"></p>
+<script type="text/javascript">
+	let firstName = "Sayyada";
+	let lastName = "Tazyeen";
+
+	let text1= 'Hello ${firstName} ${lastName}!';
+  	document.getElementById("temp").innerHTML=text1;
+</script>
+</body>
+</html>

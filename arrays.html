@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>arrays</title>
+</head>
+<body>
+	<h1>Arrays</h1>
+	<p id="arr"></p>
+	<script>
+		const names=["Sania", "Yusra", "Izhaan","Fatima"];
+document.getElementById("arr").innerHTML = names;
+
+function myFunction() {
+  names[names.length] = "Nusairah";
+  document.getElementById("arr").innerHTML = names;
+}
+</script>
+
+ <h1 id="arr2"></h1>
+ <script type="text/javascript">
+ 	const fruits=["Banana","Apple","Orange"];
+ 	document.getElementById("arr2").innerHTML=fruits.length;
+ 
+	</script>
+
+	 <!--Arrays method-->
+<h1>Array Methods</h1>
+
+ <p id="array"></p>
+
+<script>
+const fruits1 = ["Kiwi", "Plum", "pomegranate", "Apple"];
+document.getElementById("array").innerHTML = fruits1.join(" +");
+</script>
+
+
+<!--Arrays sort-->
+
+
+<p id="array1"></p>
+<p id="array2"></p>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("array1").innerHTML = points;  
+
+points.sort(function(a, b){return a - b});
+document.getElementById("array2").innerHTML = points;
+</script>
+
+
+<!--Arrays Iteration-->
+<h1>Array Iteration </h1>
+<p id="array3"></p>
+
+<script>
+const numbers = [100, 104, 209, 216, 225];
+
+let txt = "";
+numbers.forEach(myFunction);
+document.getElementById("array3").innerHTML = txt;
+
+function myFunction(value) {
+  txt += value + "<br>"; 
+}
+</script>
+
+<!--Array const-->
+<h1>Array Const</h1>
+<p id="array4"></p>
+
+<script>
+var names1 = ["Sania", "Muqtadir", "Tazyeen"];
+{  
+  var names1 = ["Sania", "Muqtadir", "Mohsin"]; 
+  
+}
+
+document.getElementById("array4").innerHTML = names1[2];
+</script>
+
+
+</body>
+</html>
